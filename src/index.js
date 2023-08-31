@@ -12,6 +12,9 @@ app.set("view engine", 'ejs')
 
 app.use(indexRoute)
 
+app.use('css', express.static(join(__dirname, 'node_modules/bootstrap/dist/css')));
+app.use('js', express.static(join(__dirname, 'node_modules/bootstrap/dist/js')));
+
 
 app.listen(3000)
 console.log("Server listening on port", 3000);
