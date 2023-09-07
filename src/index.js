@@ -12,8 +12,8 @@ app.set("view engine", 'ejs')
 
 app.use(indexRoute)
 
-app.use('css', express.static(join(__dirname, 'node_modules/bootstrap/dist/css')));
-app.use('js', express.static(join(__dirname, 'node_modules/bootstrap/dist/js')));
+app.use('/css', express.static('./node_modules/bootstrap/dist/css'))
+app.use('/js', express.static('./node_modules/bootstrap/dist/js'))
 
 
 app.listen(3000)
